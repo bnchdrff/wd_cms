@@ -1,0 +1,4 @@
+name = Work Dept CMS customizations
+description = Alter Drupal to be nicer for editors
+core = 7.x
+package = Work Dept

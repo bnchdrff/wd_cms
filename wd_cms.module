@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_file_url_alter
+ *
+ * Remove sites/domain from file paths
+ */
+function wd_cms_file_url_alter(&$uri) {
+  if (strpos($uri, 'public://styles') === 0) {
+    $uri = str_replace('public:/', '/files', $uri);
+  }
+}
+
